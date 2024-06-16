@@ -10,14 +10,16 @@
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>    
 
   <py-env>
+    - daterime
+    - sys
     - pandas
     - matplotlib
     - numpy
   </py-env>
   
 <body>
-
-<py-script src="pyscbox.py" output=""></py-script>
+  <div id"python_output" style="background-color: lightblue></div>
+  <py-script src="pyscbox.py" output="info"></py-script>
 
 </body>
 </html>
