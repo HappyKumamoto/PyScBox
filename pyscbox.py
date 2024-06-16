@@ -4,8 +4,8 @@ py.write(datetime.tatetime.now())
 
 #Pythonのバージョン
 import sys
-py.write(f'バージョン: {sys.version_info}')
-
+vir = sys.version_info
+pyscript.write("furi" , vir )
 
 #降雨量
 import pandas as pd
