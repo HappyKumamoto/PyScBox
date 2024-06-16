@@ -1,3 +1,12 @@
+#今の時刻
+import datetime
+py.write(datetime.tatetime.now())
+
+#Pythonのバージョン
+import sys
+py.write(f'バージョン: {sys.version_info}')
+
+
 #降雨量
 import pandas as pd
 import matplotlib.pyplot as plt
