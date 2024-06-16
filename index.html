@@ -10,20 +10,23 @@
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>    
 
   <py-env>
-      - daterime
-      - sys
       - pandas
       - matplotlib
       - numpy
   </py-env>
   
 <body>
-  <div id"python_output" style="background-color: lightblue></div>
+  <div id"plot"></div>
 <!--   <py-script src="pyscbox.py" output="info"></py-script> -->
   <py-script>
-    import sys
-    pyscript.write('python_output' , sys.version_info)
-    print('普通のプリント')
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    df = pd.DataFrame){
+        '名前' : ['a' ,'b','c'],
+        '年齢' : [20,32,46]})
+    fig, ax = plt.subplots()
+    as.bar(df['名前'], df['年齢'])
+    pyscript.write('plot' , fig)
   </py-script>
 </body>
 </html>
