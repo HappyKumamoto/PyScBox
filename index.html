@@ -10,8 +10,8 @@
   <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
 
   <py-env>
-      -pandas
-      -matplotlib
+      - pandas
+      - matplotlib
   </py-env>
   
 <body>
@@ -19,11 +19,13 @@
   <py-script>
     import pandas as pd
     import matplotlib.pyplot as plt
-    df = pd.DataFrame){
+    
+    df = pd.DataFrame({
         '名前' : ['a' ,'b','c'],
-        '年齢' : [20,32,46]})
+        '年齢' : [20,32,46],
+    })
     fig, ax = plt.subplots()
-    as.bar(df['名前'], df['年齢'])
+    ax.plot(df['名前'], df['年齢'])
     pyscript.write('plot' , fig)
   </py-script>
 </body>
