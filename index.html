@@ -10,16 +10,20 @@
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>    
 
   <py-env>
-    - daterime
-    - sys
-    - pandas
-    - matplotlib
-    - numpy
+      - daterime
+      - sys
+      - pandas
+      - matplotlib
+      - numpy
   </py-env>
   
 <body>
   <div id"python_output" style="background-color: lightblue></div>
-  <py-script src="pyscbox.py" output="info"></py-script>
-
+<!--   <py-script src="pyscbox.py" output="info"></py-script> -->
+  <py-script>
+    import sys
+    pyscript.write('python_output' , sys.version_info)
+    print('普通のプリント')
+  </py-script>
 </body>
 </html>
